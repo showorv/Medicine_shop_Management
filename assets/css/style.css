@@ -1,0 +1,186 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f7fb;
+}
+
+.navbar {
+    background: #1f2937;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.search-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+
+form {
+    width: 60%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* INPUT FIELDS */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* TEXTAREA */
+form textarea {
+    resize: none;
+    height: 80px;
+   
+}
+
+/* FILE INPUT */
+form input[type="file"] {
+    padding: 5px;
+    background: #f9fafb;
+}
+
+/* SUBMIT BUTTON */
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #1d4ed8;
+}
+
+/* ===== MEDICINE LIST ===== */
+div.medicine-list {
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* EACH MEDICINE CARD */
+.medicine-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* TEXT INSIDE CARD */
+.medicine-card span {
+    font-size: 15px;
+    color: #374151;
+}
+
+/* DELETE BUTTON */
+.medicine-card a {
+    text-decoration: none;
+    background: #ef4444;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.medicine-card a:hover {
+    background: #dc2626;
+}
+
+.medi {
+    display:  flex;
+    flex-direction: column;
+   justify-content: center;
+    justify-items: center;
+}

@@ -1,0 +1,215 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #0d6e5e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 60px;
+}
+
+.navbar span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 620px;
+    margin: 36px auto;
+    padding: 0 20px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7a9590;
+}
+
+.breadcrumb a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ── Page title ── */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 24px;
+}
+
+/* ── Profile top (avatar + name) ── */
+.profile-top {
+    background: #0d6e5e;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.avatar-wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.avatar-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.4);
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    border: 3px solid rgba(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.profile-top-info h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0 0 4px 0;
+}
+
+.profile-top-info p {
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    margin: 0;
+}
+
+/* ── Form card ── */
+.form-card {
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.form-card-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+/* ── Form group ── */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8e0dd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0b2420;
+    background: #f4f6f5;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.form-input:focus {
+    border-color: #0d6e5e;
+    background: white;
+}
+
+/* ── File upload ── */
+.file-upload-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border: 1px dashed #d8e0dd;
+    border-radius: 6px;
+    background: #f4f6f5;
+    cursor: pointer;
+    font-size: 13px;
+    color: #7a9590;
+}
+
+.file-upload-label:hover {
+    border-color: #0d6e5e;
+    background: #eef2f0;
+    color: #0d6e5e;
+}
+
+/* hide real file input */
+input[type="file"] {
+    display: none;
+}
+
+/* ── Divider ── */
+.form-divider {
+    border: none;
+    border-top: 1px solid #d8e0dd;
+    margin: 20px 0;
+}
+
+/* ── Submit button ── */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #0d6e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.btn-submit:hover {
+    background: #094d42;
+}
