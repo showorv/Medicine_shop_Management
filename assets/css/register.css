@@ -1,0 +1,182 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Wrapper ── */
+.register-wrapper {
+    width: 100%;
+    max-width: 460px;
+    padding: 20px;
+}
+
+/* ── Branding ── */
+.login-brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-brand .brand-icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.login-brand h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0b2420;
+    margin: 0 0 4px 0;
+}
+
+.login-brand p {
+    font-size: 13px;
+    color: #7a9590;
+    margin: 0;
+}
+
+/* ── Card ── */
+.login-card {
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 12px;
+    padding: 28px 28px 24px;
+}
+
+.login-card-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+/* ── Error / success message ── */
+.error-msg {
+    background: #fde8e8;
+    border: 1px solid #f5c6c6;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #c94040;
+    margin-bottom: 16px;
+}
+
+/* ── Two columns for name + email ── */
+.form-row {
+    display: flex;
+    gap: 14px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* ── Form group ── */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8e0dd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0b2420;
+    background: #f4f6f5;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.form-input:focus {
+    border-color: #0d6e5e;
+    background: white;
+}
+
+/* ── Select ── */
+.form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8e0dd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0b2420;
+    background: #f4f6f5;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230d6e5e' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+}
+
+.form-select:focus {
+    border-color: #0d6e5e;
+    background-color: white;
+}
+
+/* ── Divider ── */
+.form-divider {
+    border: none;
+    border-top: 1px solid #d8e0dd;
+    margin: 4px 0 18px 0;
+}
+
+/* ── Submit button ── */
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #0d6e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.btn-register:hover {
+    background: #094d42;
+}
+
+/* ── Bottom link ── */
+.login-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #7a9590;
+}
+
+.login-footer a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}

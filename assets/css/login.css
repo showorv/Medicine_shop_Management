@@ -1,0 +1,157 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Login wrapper ── */
+.login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+/* ── Logo / branding ── */
+.login-brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-brand .brand-icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.login-brand h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0b2420;
+    margin: 0 0 4px 0;
+}
+
+.login-brand p {
+    font-size: 13px;
+    color: #7a9590;
+    margin: 0;
+}
+
+/* ── Card ── */
+.login-card {
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 12px;
+    padding: 28px 28px 24px;
+}
+
+.login-card-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+/* ── Error message ── */
+.error-msg {
+    background: #fde8e8;
+    border: 1px solid #f5c6c6;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #c94040;
+    margin-bottom: 16px;
+}
+
+/* ── Form group ── */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8e0dd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0b2420;
+    background: #f4f6f5;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.form-input:focus {
+    border-color: #0d6e5e;
+    background: white;
+}
+
+/* ── Remember me row ── */
+.remember-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #3a4e4a;
+}
+
+.remember-row input[type="checkbox"] {
+    accent-color: #0d6e5e;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* ── Submit button ── */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #0d6e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.btn-login:hover {
+    background: #094d42;
+}
+
+/* ── Bottom link ── */
+.login-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #7a9590;
+}
+
+.login-footer a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
