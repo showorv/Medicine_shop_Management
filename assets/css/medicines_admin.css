@@ -1,0 +1,325 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #0b2420;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 60px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.admin-badge {
+    background: #e8890c;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.12);
+    color: white;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 1050px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7a9590;
+}
+
+.breadcrumb a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ── Two-column layout ── */
+.page-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* ── Add medicine form card ── */
+.form-card {
+    width: 320px;
+    flex-shrink: 0;
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    padding: 22px;
+    position: sticky;
+    top: 20px;
+}
+
+.form-card-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+/* ── Form group ── */
+.form-group {
+    margin-bottom: 13px;
+}
+
+.form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid #d8e0dd;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #0b2420;
+    background: #f4f6f5;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #0d6e5e;
+    background: white;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 72px;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230d6e5e' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+/* ── Two inputs side by side ── */
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* ── File upload ── */
+.file-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 11px;
+    border: 1px dashed #d8e0dd;
+    border-radius: 6px;
+    background: #f4f6f5;
+    cursor: pointer;
+    font-size: 13px;
+    color: #7a9590;
+}
+
+.file-label:hover {
+    border-color: #0d6e5e;
+    color: #0d6e5e;
+    background: #eef2f0;
+}
+
+input[type="file"] { display: none; }
+
+/* ── Submit button ── */
+.btn-add {
+    width: 100%;
+    padding: 11px;
+    background: #0d6e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+    margin-top: 4px;
+}
+
+.btn-add:hover { background: #094d42; }
+
+/* ── Right: medicine list ── */
+.list-section {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ── List header ── */
+.list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.list-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0b2420;
+}
+
+.med-count {
+    font-size: 13px;
+    color: #7a9590;
+    background: white;
+    border: 1px solid #d8e0dd;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* ── Medicine table ── */
+.med-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.med-table thead { background: #eef2f0; }
+
+.med-table th {
+    padding: 11px 16px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+.med-table td {
+    padding: 13px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f4f2;
+    vertical-align: middle;
+}
+
+.med-table tr:last-child td { border-bottom: none; }
+.med-table tr:hover td { background: #f9fbfa; }
+
+.med-name {
+    font-weight: bold;
+    color: #0b2420;
+}
+
+.med-vendor {
+    font-size: 12px;
+    color: #7a9590;
+    margin-top: 2px;
+}
+
+.price-col {
+    font-weight: bold;
+    color: #0d6e5e;
+}
+
+/* ── Action buttons ── */
+.action-btns {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #e0f0ec;
+    color: #0d6e5e;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #b8ddd6;
+}
+
+.btn-edit:hover { background: #c8e8e0; }
+
+.btn-delete {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #fde8e8;
+    color: #c94040;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #f5c6c6;
+}
+
+.btn-delete:hover { background: #f5c6c6; }
+
+
+.empty-state {
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    color: #7a9590;
+    font-size: 14px;
+}
