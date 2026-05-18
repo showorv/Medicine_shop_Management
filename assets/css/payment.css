@@ -1,0 +1,202 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #0d6e5e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 60px;
+}
+
+.navbar span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7a9590;
+}
+
+.breadcrumb a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ── Page title ── */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 6px;
+}
+
+.page-subtitle {
+    font-size: 13px;
+    color: #7a9590;
+    margin-bottom: 24px;
+}
+
+/* ── Amount box ── */
+.amount-box {
+    background: #0d6e5e;
+    border-radius: 10px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.amount-box p {
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    margin: 0 0 4px 0;
+}
+
+.amount-box span {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.amount-box .lock-icon {
+    font-size: 28px;
+    opacity: 0.6;
+}
+
+/* ── Payment card ── */
+.payment-card {
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+/* ── Payment method buttons ── */
+.method-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    background: #f4f6f5;
+    border: 1.5px solid #d8e0dd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0b2420;
+    text-align: left;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.method-btn:last-child {
+    margin-bottom: 0;
+}
+
+.method-btn:hover {
+    border-color: #0d6e5e;
+    background: #eef2f0;
+}
+
+.method-btn .method-icon {
+    font-size: 22px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* bKash - pink */
+.method-btn.bkash .method-icon {
+    background: #ffe0ec;
+}
+
+/* Nagad - orange */
+.method-btn.nagad .method-icon {
+    background: #fff0e0;
+}
+
+/* COD - green */
+.method-btn.cod .method-icon {
+    background: #e0f0ec;
+}
+
+.method-btn .method-label {
+    flex: 1;
+}
+
+.method-btn .method-sub {
+    font-size: 12px;
+    color: #7a9590;
+    font-weight: normal;
+    margin-top: 2px;
+}
+
+.method-btn .arrow {
+    color: #7a9590;
+    font-size: 18px;
+}
+
+/* ── Back link ── */
+.back-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

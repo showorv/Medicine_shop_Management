@@ -1,0 +1,210 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #0d6e5e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 60px;
+}
+
+.navbar span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 860px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7a9590;
+}
+
+.breadcrumb a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ── Page title ── */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 24px;
+}
+
+/* ── Two-column layout ── */
+.checkout-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* ── Left: address form ── */
+.checkout-form-box {
+    flex: 1;
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.box-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+.form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8e0dd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0b2420;
+    background: #f4f6f5;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #0d6e5e;
+    background: white;
+}
+
+/* ── Right: order summary ── */
+.order-summary-box {
+    width: 300px;
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+/* ── Summary items list ── */
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f4f2;
+}
+
+.summary-item:last-of-type {
+    border-bottom: none;
+}
+
+.item-name {
+    color: #0b2420;
+    font-weight: 500;
+}
+
+.item-qty {
+    font-size: 12px;
+    color: #7a9590;
+    margin-top: 2px;
+}
+
+.item-price {
+    color: #0d6e5e;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* ── Divider ── */
+.summary-divider {
+    border: none;
+    border-top: 1px solid #d8e0dd;
+    margin: 14px 0;
+}
+
+/* ── Total row ── */
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 18px;
+}
+
+.summary-total span:last-child {
+    color: #0d6e5e;
+}
+
+/* ── Buttons ── */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #0d6e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background: #094d42;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #0d6e5e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

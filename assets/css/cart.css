@@ -1,0 +1,244 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #0d6e5e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 60px;
+}
+
+.navbar span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7a9590;
+}
+
+.breadcrumb a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ── Page Title ── */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 20px;
+}
+
+/* ── Empty State ── */
+.empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    color: #7a9590;
+}
+
+.empty-cart p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* ── Cart Table ── */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.cart-table thead {
+    background: #eef2f0;
+}
+
+.cart-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+.cart-table td {
+    padding: 14px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #d8e0dd;
+    vertical-align: middle;
+}
+
+.cart-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cart-table tr:hover td {
+    background: #f9fbfa;
+}
+
+/* ── Medicine name in table ── */
+.medicine-name {
+    font-weight: bold;
+    color: #0b2420;
+    font-size: 15px;
+}
+
+.vendor-name {
+    font-size: 12px;
+    color: #7a9590;
+    margin-top: 3px;
+}
+
+/* ── Price in table ── */
+.price-col {
+    color: #0d6e5e;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ── Qty input ── */
+.qty-input {
+    width: 60px;
+    padding: 6px;
+    border: 1px solid #d8e0dd;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ── Subtotal ── */
+.subtotal-col {
+    font-weight: bold;
+    color: #0b2420;
+}
+
+/* ── Buttons ── */
+.btn {
+    padding: 7px 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #0d6e5e;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #094d42;
+}
+
+.btn-danger {
+    background: #fde8e8;
+    color: #c94040;
+}
+
+.btn-danger:hover {
+    background: #f5c6c6;
+}
+
+/* ── Summary Box ── */
+.cart-summary {
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 340px;
+    margin-left: auto;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #3a4e4a;
+}
+
+.summary-divider {
+    border: none;
+    border-top: 1px solid #d8e0dd;
+    margin: 12px 0;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 16px;
+}
+
+.summary-total span:last-child {
+    color: #0d6e5e;
+}
+
+.btn-checkout {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #0d6e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-checkout:hover {
+    background: #094d42;
+}
