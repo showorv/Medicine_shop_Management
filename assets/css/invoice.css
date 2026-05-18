@@ -1,0 +1,264 @@
+/* ── Page ── */
+body {
+    font-family: sans-serif;
+    background: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #3a4e4a;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #0d6e5e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 60px;
+}
+
+.navbar span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 780px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7a9590;
+}
+
+.breadcrumb a {
+    color: #0d6e5e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ── Page title ── */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b2420;
+    margin-bottom: 6px;
+}
+
+.page-subtitle {
+    font-size: 13px;
+    color: #7a9590;
+    margin-bottom: 24px;
+}
+
+/* ── Invoice card ── */
+.invoice-card {
+    background: white;
+    border: 1px solid #d8e0dd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* ── Invoice header (green top bar) ── */
+.invoice-header {
+    background: #0d6e5e;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoice-header-left h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0 0 4px 0;
+}
+
+.invoice-header-left p {
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    margin: 0;
+}
+
+.invoice-header-right {
+    text-align: right;
+}
+
+.invoice-header-right p {
+    color: rgba(255,255,255,0.75);
+    font-size: 12px;
+    margin: 0 0 4px 0;
+}
+
+.invoice-header-right span {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ── Shipping address row ── */
+.shipping-row {
+    background: #eef2f0;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #d8e0dd;
+    font-size: 14px;
+}
+
+.shipping-label {
+    font-weight: bold;
+    color: #7a9590;
+    font-size: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.shipping-address {
+    color: #0b2420;
+}
+
+/* ── Invoice table ── */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table thead {
+    background: #f4f6f5;
+}
+
+.invoice-table th {
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7a9590;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d8e0dd;
+}
+
+.invoice-table th:last-child {
+    text-align: right;
+}
+
+.invoice-table td {
+    padding: 14px 24px;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f4f2;
+    vertical-align: middle;
+}
+
+.invoice-table td:last-child {
+    text-align: right;
+}
+
+.invoice-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* medicine name in table */
+.med-name {
+    font-weight: bold;
+    color: #0b2420;
+}
+
+/* price & subtotal */
+.price-col {
+    color: #3a4e4a;
+}
+
+.subtotal-col {
+    font-weight: bold;
+    color: #0b2420;
+}
+
+/* ── Total footer ── */
+.invoice-footer {
+    background: #eef2f0;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #d8e0dd;
+}
+
+.total-label {
+    font-size: 14px;
+    color: #7a9590;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.total-value {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0d6e5e;
+}
+
+/* ── Action buttons ── */
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-cancel {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #d8e0dd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7a9590;
+    text-decoration: none;
+    background: white;
+}
+
+.btn-cancel:hover {
+    background: #fde8e8;
+    color: #c94040;
+    border-color: #f5c6c6;
+}
+
+.btn-confirm {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0d6e5e;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-confirm:hover {
+    background: #094d42;
+}
